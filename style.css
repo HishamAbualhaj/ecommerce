@@ -5,7 +5,9 @@
   --font-montserrat: "Montserrat", sans-serif;
   --shadow-main: rgba(149, 157, 165, 0.2) 0px 10px 30px;
 }
-
+body {
+  @apply bg-gray-50/50
+}
 .max-container {
   @apply max-w-[1600px] mx-auto px-5;
 }
