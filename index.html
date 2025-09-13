@@ -15,13 +15,16 @@
   <body class="font-montserrat">
     <!-- banner  -->
     <div id="banner" class="bg-black/85 text-white/80 py-2">
-      <div id="show_links" class="px-5 xl:hidden flex items-center gap-2 cursor-pointer">
+      <div
+        id="show_links"
+        class="px-5 xl:hidden flex items-center gap-2 cursor-pointer"
+      >
         <i data-lucide="list-chevrons-up-down"></i>
         <div class="">Quick links</div>
       </div>
 
       <div
-      id="quick_links"
+        id="quick_links"
         class="max-container max-xl:h-0 h-full overflow-hidden flex max-xl:flex-col max-xl:gap-5 xl:justify-between text-sm"
       >
         <div class="flex gap-5 max-xl:flex-col">
@@ -152,11 +155,13 @@
           </div>
         </div>
       </header>
-      <nav>
+      <nav class="max-container max-xl:!px-0">
         <div
-          class="flex items-center justify-between gap-3 border-t border-gray-200 max-w-[1600px] mx-auto"
+          class="flex items-center justify-between gap-3 border-t border-gray-200"
         >
-          <div class="flex items-center bg-primary text-white py-2 px-5 gap-3">
+          <div
+            class="flex items-center bg-primary text-white py-2 xl:px-5 px-2 xl:gap-3 gap-2"
+          >
             <i data-lucide="menu"></i>
             <div class="text">All Categories</div>
           </div>
@@ -187,123 +192,149 @@
       <div class="text-2xl font-bold text-black/80">
         Tablet and Laptops Acceccories
       </div>
-      <section class="lg:flex justify-between gap-5 mt-5 relative">
+      <section class="lg:flex justify-between gap-10 mt-5 relative">
         <!-- filter sidebar -->
-        <div
-          id="filter_sidebar"
-          class="bg-white border border-gray-200 shadow-main max-lg:-translate-x-[calc(100%+20px)] transition max-lg:absolute max-lg:top-16 rounded-sm"
-        >
+        <div class="">
           <div
-            class="border-b border-gray-300 p-3 hover:bg-gray-200/30 cursor-pointer transition"
+            id="filter_sidebar"
+            class="bg-white border border-gray-200 shadow-main max-lg:-translate-x-[calc(100%+20px)] transition max-lg:absolute max-lg:top-16 rounded-sm"
           >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-down" class="w-5 h-5"></i>
-              <div class="font-bold">Related Categories</div>
-            </div>
-            <div class="px-7 text-sm mt-2">
-              <div class="">Categories</div>
-              <div class="">Tablet and Laptops Acceccories</div>
-            </div>
-          </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-down" class="w-5 h-5"></i>
-              <div class="font-bold">Refine by</div>
-            </div>
-            <div class="px-7 text-sm mt-2">
-              <input
-                class="border border-gray-200 rounded-full p-2"
-                type="text"
-                placeholder="Android 6.0"
-              />
-              <div class="mt-2 ml-2 text-primary">Clear All</div>
-            </div>
-          </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-down" class="w-5 h-5"></i>
-              <div class="font-bold">Price</div>
-            </div>
-            <div class="px-7 text-sm mt-2">
-              <div class="w-full h-1 bg-gray-200 rounded-full relative">
-                <div class="absolute bg-primary h-full w-1/2 left-10"></div>
+            <div
+              class="border-b border-gray-300 p-3 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                <div class="font-bold">Related Categories</div>
               </div>
-              <div class="mt-3 font-bold">Price: $ 55 - $ 5000</div>
+              <div class="px-7 text-sm mt-2">
+                <div class="">Categories</div>
+                <div class="">Tablet and Laptops Acceccories</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                <div class="font-bold">Refine by</div>
+              </div>
+              <div class="px-7 text-sm mt-2">
+                <input
+                  class="border border-gray-200 rounded-full p-2"
+                  type="text"
+                  placeholder="Android 6.0"
+                />
+                <div class="mt-2 ml-2 text-primary">Clear All</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                <div class="font-bold">Price</div>
+              </div>
+              <div class="px-7 text-sm mt-2">
+                <div class="w-full h-1 bg-gray-200 rounded-full relative">
+                  <div class="absolute bg-primary h-full w-1/2 left-10"></div>
+                </div>
+                <div class="mt-3 font-bold">Price: $ 55 - $ 5000</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                <div class="font-bold">Operating System</div>
+              </div>
+              <div class="px-7 text-sm mt-2">
+                <div class="mt-1 text-primary font-bold">Android 6.0</div>
+                <div class="mt-1">Android 5.1</div>
+                <div class="mt-1">Android 5.0</div>
+                <div class="mt-1">Android 4.4</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                <div class="font-bold">Screen Size</div>
+              </div>
+              <div class="px-7 text-sm mt-2">
+                <div class="mt-1 text-primary font-bold">1920x1200</div>
+                <div class="mt-1">1280x800</div>
+                <div class="mt-1">2560x1600</div>
+                <div class="mt-1">1920x1080</div>
+                <div class="mt-1">2048x1536</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                <div class="font-bold">Processor Core</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                <div class="font-bold">Tablet Data Capacity</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                <div class="font-bold">Processor Core</div>
+              </div>
+            </div>
+
+            <div
+              class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
+            >
+              <div class="flex gap-2 items-center">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                <div class="font-bold">Tablet Data Capacity</div>
+              </div>
             </div>
           </div>
 
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-down" class="w-5 h-5"></i>
-              <div class="font-bold">Operating System</div>
-            </div>
-            <div class="px-7 text-sm mt-2">
-              <div class="mt-1 text-primary font-bold">Android 6.0</div>
-              <div class="mt-1">Android 5.1</div>
-              <div class="mt-1">Android 5.0</div>
-              <div class="mt-1">Android 4.4</div>
-            </div>
-          </div>
+          <!-- product tag  -->
+          <div class="mt-10">
+            <div class="text-xl font-bold text-black/80">Prodcut tag</div>
+            <div class="grid grid-cols-2 mt-3 gap-3 text-center">
+              <div
+                class="cursor-pointer border border-gray-200 bg-white p-2 px-3 rounded-full hover:text-primary hover:border-primary"
+              >
+                Asus laptop
+              </div>
 
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-down" class="w-5 h-5"></i>
-              <div class="font-bold">Screen Size</div>
-            </div>
-            <div class="px-7 text-sm mt-2">
-              <div class="mt-1 text-primary font-bold">1920x1200</div>
-              <div class="mt-1">1280x800</div>
-              <div class="mt-1">2560x1600</div>
-              <div class="mt-1">1920x1080</div>
-              <div class="mt-1">2048x1536</div>
+              <div
+                class="cursor-pointer border border-gray-200 bg-white p-2 px-3 rounded-full hover:text-primary hover:border-primary"
+              >
+                Windows tablet
+              </div>
+              <div
+                class="cursor-pointer border border-gray-200 bg-white p-2 px-3 rounded-full hover:text-primary hover:border-primary"
+              >
+                Xiaomi tablet
+              </div>
             </div>
           </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-right" class="w-5 h-5"></i>
-              <div class="font-bold">Processor Core</div>
-            </div>
-          </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-right" class="w-5 h-5"></i>
-              <div class="font-bold">Tablet Data Capacity</div>
-            </div>
-          </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-right" class="w-5 h-5"></i>
-              <div class="font-bold">Processor Core</div>
-            </div>
-          </div>
-
-          <div
-            class="border-b border-gray-300 p-2 pt-4 hover:bg-gray-200/30 cursor-pointer transition"
-          >
-            <div class="flex gap-2 items-center">
-              <i data-lucide="chevron-right" class="w-5 h-5"></i>
-              <div class="font-bold">Tablet Data Capacity</div>
-            </div>
-          </div>
+          <!-- product tag  -->
         </div>
         <!-- filter sidebar -->
         <div class="mt-5 flex-1">
@@ -338,9 +369,16 @@
 
           <!-- grid products -->
           <div
-            class="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 bg-white shadow-main rounded-md p-3 mt-5 gap-2"
+            class="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 bg-white shado-main rounded-md p-3 mt-5 gap-2"
           >
-            <div class="border border-gray-200 p-3 rounded-sm">
+            <div
+              class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm relative"
+            >
+              <div
+                class="bg-blue-500 absolute left-0 top-0 text-white p-1 px-3 rounded-r-full"
+              >
+                New
+              </div>
               <div class="flex justify-center">
                 <img class="w-[150px]" src="/assets/tablet.png" alt="" />
               </div>
@@ -368,8 +406,25 @@
               </div>
               <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
               <div class="mt-2 font-bold">$329.99</div>
+              <div class="addToCart hidden items-center gap-4 mt-3">
+                <div
+                  class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                >
+                  Add to card
+                </div>
+                <div
+                  class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                >
+                  <i
+                    data-lucide="heart"
+                    class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                  ></i>
+                </div>
+              </div>
             </div>
-            <div class="border border-gray-200 p-3 rounded-sm">
+            <div
+              class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm"
+            >
               <div class="flex justify-center">
                 <img class="w-[150px]" src="/assets/tablet.png" alt="" />
               </div>
@@ -397,8 +452,25 @@
               </div>
               <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
               <div class="mt-2 font-bold">$329.99</div>
+              <div class="addToCart hidden items-center gap-4 mt-3">
+                <div
+                  class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                >
+                  Add to card
+                </div>
+                <div
+                  class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                >
+                  <i
+                    data-lucide="heart"
+                    class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                  ></i>
+                </div>
+              </div>
             </div>
-            <div class="border border-gray-200 p-3 rounded-sm">
+            <div
+              class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm"
+            >
               <div class="flex justify-center">
                 <img class="w-[150px]" src="/assets/tablet.png" alt="" />
               </div>
@@ -426,8 +498,30 @@
               </div>
               <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
               <div class="mt-2 font-bold">$329.99</div>
+              <div class="addToCart hidden items-center gap-4 mt-3">
+                <div
+                  class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                >
+                  Add to card
+                </div>
+                <div
+                  class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                >
+                  <i
+                    data-lucide="heart"
+                    class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                  ></i>
+                </div>
+              </div>
             </div>
-            <div class="border border-gray-200 p-3 rounded-sm">
+            <div
+              class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm relative"
+            >
+              <div
+                class="bg-red-500 absolute left-0 top-0 text-white p-1 px-3 rounded-r-full"
+              >
+                -50%
+              </div>
               <div class="flex justify-center">
                 <img class="w-[150px]" src="/assets/tablet.png" alt="" />
               </div>
@@ -455,6 +549,21 @@
               </div>
               <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
               <div class="mt-2 font-bold">$329.99</div>
+              <div class="addToCart hidden items-center gap-4 mt-3">
+                <div
+                  class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                >
+                  Add to card
+                </div>
+                <div
+                  class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                >
+                  <i
+                    data-lucide="heart"
+                    class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                  ></i>
+                </div>
+              </div>
             </div>
           </div>
           <!-- grid products -->
@@ -484,6 +593,211 @@
             </div>
           </div>
           <!-- pagination  -->
+
+          <!-- recently viewed  -->
+          <div class="mt-16">
+            <div class="text-black/80 text-2xl font-bold">Recently Viewed</div>
+
+            <div
+              class="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 bg-white shado-main rounded-md p-3 mt-5 gap-2"
+            >
+              <div
+                class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm relative"
+              >
+                <div
+                  class="bg-blue-500 absolute left-0 top-0 text-white p-1 px-3 rounded-r-full"
+                >
+                  New
+                </div>
+                <div class="flex justify-center">
+                  <img class="w-[150px]" src="/assets/tablet.png" alt="" />
+                </div>
+                <div class="mt-1 flex items-center gap-1">
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-gray-200"
+                  ></i>
+                </div>
+                <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
+                <div class="mt-2 font-bold">$329.99</div>
+                <div class="addToCart hidden items-center gap-4 mt-3">
+                  <div
+                    class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                  >
+                    Add to card
+                  </div>
+                  <div
+                    class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                  >
+                    <i
+                      data-lucide="heart"
+                      class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm"
+              >
+                <div class="flex justify-center">
+                  <img class="w-[150px]" src="/assets/tablet.png" alt="" />
+                </div>
+                <div class="mt-1 flex items-center gap-1">
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-gray-200"
+                  ></i>
+                </div>
+                <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
+                <div class="mt-2 font-bold">$329.99</div>
+                <div class="addToCart hidden items-center gap-4 mt-3">
+                  <div
+                    class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                  >
+                    Add to card
+                  </div>
+                  <div
+                    class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                  >
+                    <i
+                      data-lucide="heart"
+                      class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm"
+              >
+                <div class="flex justify-center">
+                  <img class="w-[150px]" src="/assets/tablet.png" alt="" />
+                </div>
+                <div class="mt-1 flex items-center gap-1">
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-gray-200"
+                  ></i>
+                </div>
+                <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
+                <div class="mt-2 font-bold">$329.99</div>
+                <div class="addToCart hidden items-center gap-4 mt-3">
+                  <div
+                    class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                  >
+                    Add to card
+                  </div>
+                  <div
+                    class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                  >
+                    <i
+                      data-lucide="heart"
+                      class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card border transition cursor-pointer border-gray-200 p-3 rounded-sm relative"
+              >
+                <div
+                  class="bg-red-500 absolute left-0 top-0 text-white p-1 px-3 rounded-r-full"
+                >
+                  -50%
+                </div>
+                <div class="flex justify-center">
+                  <img class="w-[150px]" src="/assets/tablet.png" alt="" />
+                </div>
+                <div class="mt-1 flex items-center gap-1">
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-yellow-400"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="w-5 h-5 text-transparent fill-gray-200"
+                  ></i>
+                </div>
+                <div class="mt-2">Lenovo P8 Tab3 8 plus</div>
+                <div class="mt-2 font-bold">$329.99</div>
+                <div class="addToCart hidden items-center gap-4 mt-3">
+                  <div
+                    class="rounded-full bg-primary text-white p-3 px-4 cursor-pointer transition hover:bg-primary/80"
+                  >
+                    Add to card
+                  </div>
+                  <div
+                    class="border border-gray-200 p-3 bg-white rounded-full text-gray-400 cursor-pointer"
+                  >
+                    <i
+                      data-lucide="heart"
+                      class="w-5 h-5 hover:fill-red-500 hover:text-red-500 transition"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- recently viewed  -->
         </div>
       </section>
     </main>
